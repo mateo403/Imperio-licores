@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPERIO LICORES</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        nav {
+            background-color: #e67e22;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: url('https://images.unsplash.com/photo-1565895405132-bf2e7b4de228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center/cover;
+            color: #ffe81a;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+        .product p {
+            color: #666;
+        }
+        .product button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1rem 0;
+        }
+        .product button:hover {
+            background-color: #d35400;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+        .contact {
+            margin: 2rem 0;
+            text-align: center;
+            color: #333;
+        }
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+        .history {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+        }
+        .history h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .history p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IMPERIO LICORES</h1>
+        <p>¡Los mejores licores al mejor precio!</p>
+    </header>
+    <nav>
+        <a href="#history">Inicio</a>
+        <a href="#products">Productos</a>
+        <a href="https://wa.me/573202063194" target="_blank">Contacto</a>
+    </nav>
+    <section class="hero">
+        <h1>Bienvenidos a IMPERIO LICORES</h1>
+        <p>Tu destino para disfrutar del mejor licor</p>
+    </section>
+    <section id="products" class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1598551384587-3e758110ee36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Aguardiente Antioqueño">
+            <h3>Aguardiente Antioqueño</h3>
+            <p>$23.000</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1556861460-1d2dcd1c104e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Whisky Premium">
+            <h3>Whisky Premium</h3>
+            <p>$50.000</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1605519009437-472b3e175bc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Vino Tinto">
+            <h3>Vino Tinto</h3>
+            <p>$30.000</p>
+            <button>Comprar</button>
+        </div>
+    </section>
+    <section id="history" class="history">
+        <h2>Nuestra Historia</h2>
+        <p>En IMPERIO LICORES, creemos que cada botella cuenta una historia. Nacimos de la pasión por brindar experiencias únicas y de la visión de ofrecer los mejores productos a nuestra comunidad. Desde los clásicos aguardientes hasta vinos premium, nuestra misión es llenar de alegría cada celebración. ¡Únete a nuestra familia y descubre por qué somos el corazón de tus momentos más especiales!</p>
+    </section>
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <p>Teléfono: <a href="https://wa.me/573202063194" target="_blank">3202063194</a></p>
+        <p>Dirección: Calle 24 #1-60</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 IMPERIO LICORES. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
